@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create card</title>
+</head>
+<body>
+  <input id="name" type="text" placeholder="enter name">
+  <input id="submit" type="submit">
+<script>
+    let submit = document.getElementById('submit');
+    let name = document.getElementById('name');
+    console.log(window.location)
+    submit.addEventListener('click', (e)=>{
+        location.replace('http://localhost:63342/valentine/index.html?_ijt=1o2vf82pu19hubovc2c2vcf38q&_ij_reload=RELOAD_ON_SAVE&name=' + name.value)
+    })
+
+</script>
+</body>
+</html>
